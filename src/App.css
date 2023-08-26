@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "regular";
+  src: url('./fonts/SFUIText-Regular.otf');
+}
+@font-face {
+  font-family: "light";
+  src: url('./fonts/SFUIText-Light.otf');
+}
+@font-face {
+  font-family: "bold";
+  src: url('./fonts/SFUIText-Bold.otf');
+}
+*{margin: 0;padding: 0;}
+p{font-family: "light";font-size: 20px;}
+h1{font-family: "bold";font-size: 48px;color:#2A4364;}
+h2{font-family: "bold";font-size: 48px;color:#597FFB;}
+h3{font-family: "bold";}
+h4{font-family: "bold";}
+
+main{display: flex; align-items: center;justify-content: center;margin: 15rem 0 4rem 4rem;}
+.hero-text{display: flex;flex-direction: column;align-items: center;width: 30%;}
+.text{display: flex;flex-direction: column;gap:.8rem}
+.hero-image{width: 50%;display: flex;justify-content: center;}
+.hero-image img{width: 40rem;max-width: 100%;height: 100%;}
+
+@media(760px < width < 1024px){
+  main{flex-direction: column;gap:4rem}
+  .hero-text{width: 80%;}
+  .hero-image{width: 80%;}
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media(width < 760px){
+  p{font-family: "light";font-size: 16px;}
+  h1{font-family: "bold";font-size: 38px;color:#2A4364;}
+  h2{font-family: "bold";font-size: 38px;color:#597FFB;}
+  main{flex-direction: column;gap:4rem;margin: 5rem 1rem 1rem 1rem;}
+  .hero-text{width: 80%;}
+  .hero-image{width: 80%;}
 }

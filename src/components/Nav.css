@@ -1,0 +1,133 @@
+@font-face {
+    font-family: "light";
+    src: url('../fonts/SFUIText-Light.otf');
+  }
+li {list-style: none;}
+a {text-decoration: none;}
+span {color: white;}
+
+img{
+  height:40px;
+  width:40px;
+}
+
+.header {
+  margin: 6rem 0 6rem 0;
+}
+.navbar {
+  font-family: "light";
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  z-index:10;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 5rem;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  color: #737C8C;
+}
+
+.nav-link:hover {
+  color: #597FFB;
+}
+
+.nav-logo {
+  color: #597FFB;
+  display: flex;
+  align-items: center;
+  gap:1rem;
+  font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+    .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+
+nav {
+    height: 60x;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100vw;
+}
+
+.nav-up {
+    top: -60px;
+    padding: 0rem;
+}
