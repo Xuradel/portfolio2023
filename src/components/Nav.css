@@ -11,9 +11,6 @@ img{
   width:40px;
 }
 
-.header {
-  margin: 6rem 0 6rem 0;
-}
 .navbar {
   font-family: "light";
   display: flex;
@@ -61,7 +58,7 @@ img{
 
 .nav-link {
   font-size: 1.6rem;
-  color: #737C8C;
+  color: #2C4364;
 }
 
 .nav-link:hover {

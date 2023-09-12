@@ -1,24 +1,47 @@
 import React from 'react'
-import { ReactComponent as Background } from '../images/heroimagebackground.svg'
+import { ReactComponent as Twolines } from '../images/undraw_two-lines.svg'
+import { ReactComponent as Code } from '../images/undraw_code.svg'
+import { ReactComponent as Arrow } from '../images/undraw_fun-arrow.svg'
+import { ReactComponent as Coffee } from '../images/undraw_coffee.svg'
+import { ReactComponent as Bar } from '../images/undraw_bar-chart.svg'
+import { ReactComponent as Threelines } from '../images/undraw_three-lines.svg'
+
+
+
 const Hero = () => {
     return (
-        <main>
+        <header>
             <div className='hero-text'>
                 <div className='text'>
-                    <p>Full Stack Developer</p>
+                    <Coffee className='coffee'></Coffee>
+                    <Bar className='barchart'></Bar>
+                    <Threelines className='threelines'></Threelines>
+                    <h3>Full-Stack <span className='blue'>Developer</span></h3>
                     <div className='headings'>
                         <h1>I Build Custom</h1>
                         <h2>Website Solutions</h2>
                         <h1>That Help Your</h1>
                         <h2>Business Grow</h2>
                     </div>
-                    <p>I help you increase conversion and performance in every possible way.</p>
+                    <div className='buttons'>
+                        <button className='button-1'>
+                            <b>See my work</b>
+                        </button>
+                        <button className='button-1 button-2'>
+                            <b>About me</b>
+                        </button>
+                    </div>
                 </div>
             </div>
             <div className='hero-image'>
-                <img src={require('../images/heroimage.png')}></img>
+                <Twolines className='twolines'></Twolines>
+                <Code className='code'></Code>
+                <Arrow className='arrow'></Arrow>
+                <div className="circle-container">
+                    <img src={require('../images/xura0.png')} className='avatar'></img>
+                </div>
             </div>
-        </main>
+        </header>
     )
 }
 
