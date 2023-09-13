@@ -1,7 +1,12 @@
 @font-face {
     font-family: "light";
     src: url('../fonts/SFUIText-Light.otf');
-  }
+}
+@font-face {
+  font-family: "JostLight";
+  src: url('../fonts/Jost-Light.ttf');
+}
+  
 li {list-style: none;}
 a {text-decoration: none;}
 span {color: white;}
@@ -12,7 +17,7 @@ img{
 }
 
 .navbar {
-  font-family: "light";
+  font-family: "JostLight";
   display: flex;
   justify-content: space-around;
   align-items: center;

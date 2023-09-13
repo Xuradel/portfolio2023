@@ -16,7 +16,7 @@ const Hero = () => {
                     <Coffee className='coffee'></Coffee>
                     <Bar className='barchart'></Bar>
                     <Threelines className='threelines'></Threelines>
-                    <h3>Full-Stack <span className='blue'>Developer</span></h3>
+                    <p>Full-Stack <span className='blue'>Developer</span></p>
                     <div className='headings'>
                         <h1>I Build Custom</h1>
                         <h2>Website Solutions</h2>
