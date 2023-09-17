@@ -28,8 +28,7 @@ const ProjectDetail = ({ project, onClose }) => {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className='project-detail-text'>
+                <div className='project-detail-text'>
                 <div className='text-left'>
                     <h4 className='text-titles'>Description</h4>
                     <p className='text-description'>{project.project_description}</p>
@@ -47,6 +46,8 @@ const ProjectDetail = ({ project, onClose }) => {
                     </div>
                 </div>
             </div>
+            </div>
+
         </div>
     );
 };
