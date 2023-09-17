@@ -3,68 +3,33 @@
       {
         "project_title": "E-commerce store",
         "project_description": "Description for Project 1",
-        "image_link": "/projects/storepage.png",
+        "image_link": "/projects/ecommerce.png",
         "github_link": "#",
         "application_link": "#"
       },
       {
-        "project_title": "Project 2",
+        "project_title": "Auto Showroom",
         "project_description": "Description for Project 2",
         "image_link": "/projects/proxieves.png",
         "github_link": "#",
         "application_link": "#"
       },
       {
-        "project_title": "Project 3",
+        "project_title": "Digital Money Transfer Platform",
         "project_description": "Description for Project 3",
         "image_link": "/projects/proxitransfer.png",
         "github_link": "#",
         "application_link": "#"
       },
       {
-        "project_title": "Project 4",
+        "project_title": "Esports Data Analytics",
         "project_description": "Description for Project 4",
-        "image_link": "/projects/lolPage.png",
+        "image_link": "/projects/leaguepro.png",
         "github_link": "#",
         "application_link": "#"
       },
       {
-        "project_title": "Project 5",
-        "project_description": "Description for Project 5",
-        "image_link": "/projects/vetPage.png",
-        "github_link": "#",
-        "application_link": "#"
-      },
-      {
-        "project_title": "Project 6",
-        "project_description": "Description for Project 5",
-        "image_link": "/projects/vetPage.png",
-        "github_link": "#",
-        "application_link": "#"
-      },
-      {
-        "project_title": "Project 7",
-        "project_description": "Description for Project 5",
-        "image_link": "/projects/vetPage.png",
-        "github_link": "#",
-        "application_link": "#"
-      },
-      {
-        "project_title": "Project 8",
-        "project_description": "Description for Project 5",
-        "image_link": "/projects/vetPage.png",
-        "github_link": "#",
-        "application_link": "#"
-      },
-      {
-        "project_title": "Project 9",
-        "project_description": "Description for Project 5",
-        "image_link": "/projects/vetPage.png",
-        "github_link": "#",
-        "application_link": "#"
-      },
-      {
-        "project_title": "Project 10",
+        "project_title": "Veterinary",
         "project_description": "Description for Project 5",
         "image_link": "/projects/vetPage.png",
         "github_link": "#",

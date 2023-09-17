@@ -37,8 +37,9 @@ const Hero = () => {
                 <Twolines className='twolines'></Twolines>
                 <Code className='code'></Code>
                 <Arrow className='arrow'></Arrow>
+                <img src={require('../images/fullstack.png')} className='fullstack' alt='fullstackbadge'></img>
                 <div className="circle-container">
-                    <img src={require('../images/xura0.png')} className='avatar'></img>
+                    <img src={require('../images/xura0.png')} className='avatar' alt='avatar'></img>
                 </div>
             </div>
         </header>
