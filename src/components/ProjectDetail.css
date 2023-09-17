@@ -1,6 +1,7 @@
 /* ProjectDetail.css */
 .project-detail-overlay {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -8,7 +9,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  /* background-color: rgba(0, 0, 0, 0.5); Semi-transparent background */
   z-index: 1000; /* Higher z-index to appear in front */
 }
 
@@ -18,13 +19,122 @@
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   position: relative;
+  height: 540px;
 }
 
 .close-button {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: -16px;
+  right: 1px;
   cursor: pointer;
-  font-size: 24px;
-  color: #333;
+  font-size: 48px;
+  color: #060606;
+  z-index: 10;
+}
+
+.detail-content-image{max-width: 100%;
+    position: relative;
+
+}
+.title-background {
+    background-color: rgba(150, 150, 150, 0.84); /* Light gray background */
+    position: absolute;
+    top: 250px;
+    left: 0;
+    right: 0;
+    padding: 10px; /* Adjust as needed */
+    margin: 0 20px;
+    border-radius: 0 0 5px 5px; /* Rounded corners at the bottom */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title-background-right{display: flex;gap:.5rem}
+.title-background-right img{width: 30px;height: 30px;}
+.project-title {
+    margin: 0;
+}
+.content-image{
+  width: 500px;
+  height: auto;
+  object-fit: cover;
+  transition: filter 0.3s ease; /* Smooth transition for filter property */
+  filter: brightness(100%); /* Default brightness */
+  box-shadow: 0px 5px 15px -3px rgba(0,0,0,0.1);
+}
+.project-title2{font-size: 14px;color: white;}
+
+.project-detail-text{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 570px;
+    width: 460px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.text-left{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    width: 60%;
+}
+.text-right{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    width: 30%;
+}
+.text-titles{
+    font-size: 16px
+}
+.text-description{font-size: 14px;}
+
+@media(760px < width < 1024px){
+    .project-detail-content {
+        height: 530px;
+    }
+    .project-detail-text{
+        top: 540px;
+        width: 460px;
+        height: 200px;
+
+    }
+}
+
+@media(width < 760px){
+    .project-detail-content {
+        height: 450px;
+        width: 300px;
+    }
+    .content-image{
+        width: 300px;
+    }
+    .title-background {
+        top: 147px;
+        padding: 5px; /* Adjust as needed */
+        margin: 0 20px;
+
+    }
+    .project-detail-text{
+        top: 388px;
+        width: 260px;
+        height: 220px;
+    }
+    .text-left{
+        gap:1rem;
+        width: 60%;
+    }
+    .text-right{
+        gap:1rem;
+        width: 30%;
+    }
+    .text-titles{
+        font-size: 16px
+    }
+    .text-description{font-size: 12px;}
+    .tech-images img{width: 30px;height: 30px;}
 }

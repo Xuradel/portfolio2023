@@ -77,11 +77,25 @@ img{
   gap:1rem;
   font-size: 1.8rem;
 }
+nav {
+  height: 60x;
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 65%;
+}
 
+.nav-up {
+  top: -60px;
+  padding: 0rem;
+}
+
+.navbar-container{display: flex;justify-content: center;
+width: 100%;}
 @media only screen and (max-width: 1024px) {
   .nav-menu {
     position: fixed;
-    left: -100%;
+    left: -150%;
     top: 5rem;
     flex-direction: column;
     background-color: #fff;
@@ -118,18 +132,13 @@ img{
     -webkit-transform: translateY(-8px) rotate(-45deg);
     transform: translateY(-8px) rotate(-45deg);
   }
-}
-
-
-nav {
+  nav {
     height: 60x;
     position: fixed;
     top: 0;
     transition: top 0.2s ease-in-out;
-    width: 100vw;
+    width: 100%;
+  }
 }
 
-.nav-up {
-    top: -60px;
-    padding: 0rem;
-}
+

@@ -8,6 +8,8 @@ import PreLoader from './components/PreLoader';
 import Projects from './components/Projects';
 import Services from './components/Services';
 import ProjectDetail from './components/ProjectDetails';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -26,10 +28,11 @@ function App() {
           <About></About>
           <Services></Services>
           <Projects onProjectClick={handleProjectClick}></Projects>
-          {/* Render the selected project's detail */}
           {selectedProject && (
             <ProjectDetail project={selectedProject} />
           )}
+          <Contact></Contact>
+          <Footer></Footer>
         </main>
       </body>
     </>

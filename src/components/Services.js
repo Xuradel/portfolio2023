@@ -1,12 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import 'aos/dist/aos.css'; // Import AOS CSS
+import AOS from 'aos';
 
 const Services = () => {
+    useEffect(() => {
+        AOS.init({ duration: 300 })
+    }, [])
     return (
-        <div className='services-section'>
-            <div className='services-title'>
+        <div className='services-section' id='services-section'>
+            <div className='services-title'
+                data-aos="fade-up"
+                data-aos-duration="1000">
                 <h2>Services I offer</h2>
             </div>
-            <div className='services-grid'>
+            <div className='services-grid'
+                data-aos="fade-up"
+                data-aos-duration="1000">
                 <div className='service'>
                     <img src={require('../images/development.png')} className='service-icon' alt='serviceicon'></img>
                     <h3>Web Development</h3>
