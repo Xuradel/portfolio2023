@@ -13,13 +13,13 @@ const ProjectDetail = ({ project, onClose }) => {
             <div className="project-detail-content">
                 <span className="close-button" onClick={onClose}>&times;</span>
                 <div className='detailt-content-image'>
-                    <img src={project.image_link} className='content-image'></img>
+                    <img src={project.image_link} className='content-image' alt='content'></img>
                     <div className='title-background'>
                         <div className='title-background-left'>
                             <h4 className='project-title2'>{project.project_title}</h4>
                         </div>
                         <div className='title-background-right'>
-                            {project.github_link != '' ? <a href={project.github_link} target="_blank">
+                            {project.github_link !== '' ? <a href={project.github_link} target="_blank">
                                 <img src={require('../images/icons8-github-50.png')}></img>
                             </a> : null}
                             <a href={project.application_link} target="_blank">

@@ -31,7 +31,8 @@ const About = () => {
                 data-aos="fade-right"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine"
-                data-aos-duration="1000"></img>
+                data-aos-duration="1000"
+                alt='about'></img>
             </div>
             <div className='about-text-section'>
                 <div className='about-text'>
@@ -66,7 +67,8 @@ const About = () => {
                                     data-aos-easing="ease-in-back"
                                     data-aos-delay="900"
                                     data-aos-offset="0">
-                                    <img src={require('../images/stack/html.png')}></img>
+                                    <img src={require('../images/stack/html.png')}
+                                    alt='html'></img>
                                     <p className='small-p'>HTML5</p>
                                 </div>
                                 <div className='stack-item'
@@ -74,7 +76,8 @@ const About = () => {
                                     data-aos-easing="ease-in-back"
                                     data-aos-delay="950"
                                     data-aos-offset="0">
-                                    <img src={require('../images/stack/css.png')}></img>
+                                    <img src={require('../images/stack/css.png')}
+                                    alt='css'></img>
                                     <p className='small-p'>CSS3</p>
                                 </div>
                                 <div className='stack-item'
@@ -82,7 +85,8 @@ const About = () => {
                                     data-aos-easing="ease-in-back"
                                     data-aos-delay="1000"
                                     data-aos-offset="0">
-                                    <img src={require('../images/stack/js.png')}></img>
+                                    <img src={require('../images/stack/js.png')}
+                                    alt='javascript'></img>
                                     <p className='small-p'>JavaScript</p>
                                 </div>
                                 <div className='stack-item'
@@ -90,7 +94,8 @@ const About = () => {
                                     data-aos-easing="ease-in-back"
                                     data-aos-delay="1050"
                                     data-aos-offset="0">
-                                    <img src={require('../images/stack/react.png')}></img>
+                                    <img src={require('../images/stack/react.png')}
+                                    alt='reactjs'></img>
                                     <p className='small-p'>ReactJs</p>
                                 </div>
                                 <div className='stack-item'
@@ -98,7 +103,8 @@ const About = () => {
                                     data-aos-easing="ease-in-back"
                                     data-aos-delay="1100"
                                     data-aos-offset="0">
-                                    <img src={require('../images/stack/sass.png')}></img>
+                                    <img src={require('../images/stack/sass.png')}
+                                    alt='sass'></img>
                                     <p className='small-p'>SASS</p>
                                 </div>
                                 <div className='stack-item'
@@ -106,7 +112,8 @@ const About = () => {
                                     data-aos-easing="ease-in-back"
                                     data-aos-delay="1150"
                                     data-aos-offset="0">
-                                    <img src={require('../images/stack/bootstrap.png')}></img>
+                                    <img src={require('../images/stack/bootstrap.png')}
+                                    alt='bootstrap'></img>
                                     <p className='small-p'>Bootstrap</p>
                                 </div>
                             </div>
@@ -120,7 +127,8 @@ const About = () => {
                                     data-aos-easing="ease-in-back"
                                     data-aos-delay="1200"
                                     data-aos-offset="0">
-                                    <img src={require('../images/stack/django.png')}></img>
+                                    <img src={require('../images/stack/django.png')}
+                                    alt='django'></img>
                                     <p className='small-p'>Django</p>
                                 </div>
                                 <div className='stack-item'
@@ -128,7 +136,8 @@ const About = () => {
                                     data-aos-easing="ease-in-back"
                                     data-aos-delay="1250"
                                     data-aos-offset="0">
-                                    <img src={require('../images/stack/python.png')}></img>
+                                    <img src={require('../images/stack/python.png')}
+                                    alt='python'></img>
                                     <p className='small-p'>Python</p>
                                 </div>
                                 <div className='stack-item'
@@ -136,7 +145,8 @@ const About = () => {
                                     data-aos-easing="ease-in-back"
                                     data-aos-delay="1300"
                                     data-aos-offset="0">
-                                    <img src={require('../images/stack/sql.png')}></img>
+                                    <img src={require('../images/stack/sql.png')}
+                                    alt='mysql'></img>
                                     <p className='small-p'>MySQL</p>
                                 </div>
                                 <div className='stack-item'
@@ -144,7 +154,8 @@ const About = () => {
                                     data-aos-easing="ease-in-back"
                                     data-aos-delay="1350"
                                     data-aos-offset="0">
-                                    <img src={require('../images/stack/node.png')}></img>
+                                    <img src={require('../images/stack/node.png')}
+                                    alt='node'></img>
                                     <p className='small-p'>Node</p>
                                 </div>
                                 <div className='stack-item'
@@ -152,7 +163,8 @@ const About = () => {
                                     data-aos-easing="ease-in-back"
                                     data-aos-delay="1400"
                                     data-aos-offset="0">
-                                    <img src={require('../images/stack/api.png')}></img>
+                                    <img src={require('../images/stack/api.png')}
+                                    alt='api'></img>
                                     <p className='small-p'>RESTful API's</p>
                                 </div>
                             </div>
@@ -165,7 +177,8 @@ const About = () => {
                                     data-aos-easing="ease-in-back"
                                     data-aos-delay="1450"
                                     data-aos-offset="0">
-                                    <img src={require('../images/stack/git.png')}></img>
+                                    <img src={require('../images/stack/git.png')}
+                                    alt='git'></img>
                                     <p className='small-p'>Git & Github</p>
                                 </div>
                                 <div className='stack-item'
@@ -173,7 +186,8 @@ const About = () => {
                                     data-aos-easing="ease-in-back"
                                     data-aos-delay="1500"
                                     data-aos-offset="0">
-                                    <img src={require('../images/stack/sketch.png')}></img>
+                                    <img src={require('../images/stack/sketch.png')}
+                                    alt='sketch'></img>
                                     <p className='small-p'>Sketch</p>
                                 </div>
                                 <div className='stack-item'
@@ -181,7 +195,8 @@ const About = () => {
                                     data-aos-easing="ease-in-back"
                                     data-aos-delay="1550"
                                     data-aos-offset="0">
-                                    <img src={require('../images/stack/figma.png')}></img>
+                                    <img src={require('../images/stack/figma.png')}
+                                    alt='figma'></img>
                                     <p className='small-p'>Figma</p>
                                 </div>
                             </div>

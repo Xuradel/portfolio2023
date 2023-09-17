@@ -2,7 +2,6 @@ import React from 'react'
 import { useEffect } from 'react';
 import './Nav.css'
 import 'aos/dist/aos.css'; // Import AOS CSS
-import AOS from 'aos';
 
 function script() {
     const hamburger = document.querySelector(".hamburger");
@@ -93,7 +92,7 @@ const Nav = () => {
                     data-aos-easing="ease-in-back"
                     data-aos-delay="200"
                     data-aos-offset="0">
-                    <img src={require('../images/dev.png')}></img>
+                    <img src={require('../images/dev.png')} alt='luislogo'></img>
                     <p>Luis Web Dev</p>
                 </a>
                 <ul class="nav-menu">

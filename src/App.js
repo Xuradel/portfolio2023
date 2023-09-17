@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import About from './components/About';
 import Hero from './components/Hero';
 import Nav from './components/Nav';
-import PreLoader from './components/PreLoader';
+// import PreLoader from './components/PreLoader';
 import Projects from './components/Projects';
 import Services from './components/Services';
 import ProjectDetail from './components/ProjectDetails';
