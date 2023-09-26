@@ -166,81 +166,94 @@ header{display: flex;height: 100vh;align-items: center;justify-content: space-ar
 .service:hover{background-color: #98aef53d;transition: .5s ease;}
 
 /* Projects Section */
-.projects-section{display: flex;flex-direction: column;align-items: center;gap:4rem;margin-top:15rem;}
 
-.parent {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+
+.project-card {
+  width: 550px; /* Adjust the card width as needed */
   height: 400px;
-  width: 1130px;
-  row-gap: .5rem;
-  column-gap: .5rem;
-  
-  }
-  .div1 { grid-area: 1 / 1 / 3 / 3; }
-  .div2 { grid-area: 1 / 3 / 2 / 4; }
-  .div3 { grid-area: 1 / 4 / 2 / 5; }
-  .div4 { grid-area: 2 / 3 / 3 / 4; }
-  .div5 { grid-area: 2 / 4 / 3 / 5; }
-
-.parent > div {
-  position: relative;
-  overflow: hidden;
-  padding: .5rem;
-  box-shadow: 0px 6px 15px -3px rgba(0,0,0,0.1);
+  margin: 10px;
   border-radius: 5px;
 }
 
-.parent > div img {
+.project-card-image {
+  height: 500px; /* Set the height of the image container */
+}
+
+.project-card-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  transition: filter 0.3s ease; /* Smooth transition for filter property */
-  filter: brightness(100%); /* Default brightness */
+  object-fit: cover; /* Maintain aspect ratio and cover container */
+  transition: .3s ease;
+}
+.project-card-image img:hover{
+  scale:105%
+}
+.project-card-text {
+  padding: 10px;
+  display: flex;
 }
 
-/* Default state for project title */
-.parent > div .project-title {
+.project-card-text h3 {
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+  position: relative;
+  bottom:5rem;
+}
+
+
+.projects{display: flex;flex-direction: column;align-items: center;margin-top: 15rem;}
+.carousel-content{display: grid;grid-template-columns: repeat(2, 1fr); place-items: center;}
+/* CSS for the modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.close-button {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
-  opacity: 1; /* Always visible by default */
-  transition: opacity 0.3s ease;
-  background-color: #a4a4a4;
-  padding: 2px;
-  border-radius: 2.5px;
-  font-size: 15px;
-  width: 92%;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
 }
-.parent > div .project-title {
-  color: rgb(255, 255, 255);
+/* CSS for the image container */
+.image-container {
+  max-width: 55%;
+  margin: 0 auto; /* Center the container horizontally */
 }
 
-/* Hover state */
-.parent > div:hover img {
-  filter: brightness(30%); /* Darken the image on hover */
+/* CSS for the responsive image */
+.responsive-image {
+  width: 100%; /* Ensure the image always takes 100% of the container width */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  display: block; /* Remove any default spacing or alignment */
+  max-width: 100%; /* Ensure the image never exceeds its original size */
 }
-
-/* Default state for project description */
-.parent > div .project-description {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  opacity: 0; /* Hidden by default */
-  transition: opacity 0.3s ease;
-  color: white; /* Text color for description */
-  font-size: 13px;
-
-}
-
-/* Hover state for project description */
-.parent > div:hover .project-description {
-  opacity: 1; /* Show the description on hover */
-}
-
+.modal-top{display: flex;flex-direction: column;align-items: center;}
+.tech-container{width: 54.7%; display: flex;justify-content: center;gap:1rem}
+.modal-description{width: 50%;}
+.modal-techs{width: 30%;}
+.tech-items{display: flex;flex-wrap: wrap;}
+.modal-buttons{display:flex ;gap:1rem}
 
 /* Contact section */
 .contact-section{background-color: #E9F9FF;border-radius: 20px; padding: 2rem;
@@ -291,11 +304,32 @@ width: 100%;margin-top: 2rem;}
     .projects-section{margin-top: 10rem;}
     .contact-section{margin-top: 10rem;}
     .contact-heading h2{font-size: 32px;}
+    .project-card {
+      width: 600px; /* Adjust the card width as needed */
+      height: 400px;
+      margin: 10px;
+    }
+    .project-card-image {
+      height: 500px; /* Set the height of the image container */
+    }
+
+    .project-card-text h3 {
+      bottom:5rem;left:1.8rem;
+    }
+    .carousel-content{grid-template-columns:1fr;}
+    .modal{gap:2rem}
+    .image-container {
+      max-width: 100%;
+      margin: 0 auto; /* Center the container horizontally */
+    }
+    .tech-container{width: 80%; display: flex;justify-content: center;gap:1rem}
+    .modal-description{width: 60%;}
+    .modal-techs{width: 30%;}
 }
 
 @media(width < 760px){
   .small-p{font-size: 12px;}
-  p{font-family: "light";font-size: 14px;}
+  p{font-family: "light";font-size: 11px;}
   h1{font-family: "bold";font-size: 20px;color:#2A4364;}
   h2{font-family: "bold";font-size: 20px;color:#597FFB;}
   h3{font-size: 12px;}
@@ -350,6 +384,28 @@ width: 100%;margin-top: 2rem;}
     .div5 { grid-area: 5 / 1 / 6 / 2; }
     .services-section{margin-top: 5rem;}
     .about-section{margin-top:0}
-    .projects-section{margin-top: 5rem;}
     .contact-section{margin-top: 5rem;}
+    .projects{margin-top: 5rem;;}
+    .project-card {
+      width: 330px; /* Adjust the card width as needed */
+      height: 250px;
+      margin: 10px;
+    }
+    .project-card-image {
+      height: 300px; /* Set the height of the image container */
+    }
+    .project-card-text h3 {
+      bottom:4rem;left:0rem;
+    }
+    .carousel-content{grid-template-columns:1fr;}
+    .tech-icon{width: 20px;height: 20px;}
+    .modal{gap:2rem}
+    .image-container {
+      max-width: 100%;
+      margin: 0 auto; /* Center the container horizontally */
+    }
+    .tech-container{width: 80%; display: flex;justify-content: center;gap:1rem}
+    .modal-description{width: 60%;}
+    .modal-techs{width: 30%;}
 }
+
