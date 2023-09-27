@@ -9,6 +9,8 @@ const ProjectModal = ({ project, onClose }) => {
                     <div className="image-container">
                         <img src={project.image_link} alt={project.project_title} className='responsive-image' />
                     </div>
+                </div>
+                <div className='modal-bottom'>
                     <div className='tech-container'>
                         <div className='modal-description'>
                             <p>
@@ -30,17 +32,16 @@ const ProjectModal = ({ project, onClose }) => {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className='modal-buttons'>
-                    <button className="close-modal-button button-1" onClick={onClose}>
-                        Close
-                    </button>
-                    <a href={`${project.application_link}`} target='_blank' className='certificates'>
-                        <button className='button-1 button-2'>
-                            <b>Live Website</b>
+                    <div className='modal-buttons'>
+                        <button className="close-modal-button button-1" onClick={onClose}>
+                            Close
                         </button>
-                    </a>
-
+                        <a href={`${project.application_link}`} target='_blank' className='certificates'>
+                            <button className='button-1 button-2'>
+                                <b>Live Website</b>
+                            </button>
+                        </a>
+                    </div>
                 </div>
 
             </div>

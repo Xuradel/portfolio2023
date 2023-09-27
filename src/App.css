@@ -249,8 +249,10 @@ header{display: flex;height: 100vh;align-items: center;justify-content: space-ar
   max-width: 100%; /* Ensure the image never exceeds its original size */
 }
 .modal-top{display: flex;flex-direction: column;align-items: center;}
+.modal-bottom{display: flex;flex-direction: column;align-items: center;gap:1rem;
+position: relative;bottom:5rem}
 .tech-container{width: 54.7%; display: flex;justify-content: center;gap:1rem}
-.modal-description{width: 50%;}
+.modal-description{width: 50%;position: relative;}
 .modal-techs{width: 30%;}
 .tech-items{display: flex;flex-wrap: wrap;}
 .modal-buttons{display:flex ;gap:1rem}
