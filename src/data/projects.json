@@ -14,7 +14,15 @@
         "image_link": "/projects/league.png",
         "github_link": "",
         "application_link": "https://www.leagueprodata.com/",
-        "tech": ["react", "django", "git", "api", "sql"]
+        "tech": ["react", "django", "git", "api", "sql","js","css"]
+      },
+      {
+        "project_title": "AI-Prompts",
+        "project_description": "Full Stack Web application where you can see posts from anyone, authenticate to create posts, and manage your profile.",
+        "image_link": "/projects/prompts.png",
+        "github_link": "https://github.com/Xuradel/prompts",
+        "application_link": "https://prompts-nine.vercel.app/",
+        "tech": ["nextjs", "tailwind", "mongo", "js"]
       },
       {
         "project_title": "E-commerce store",
@@ -25,12 +33,12 @@
         "tech": ["react", "bootstrap", "sketch", "api"]
       },
       {
-        "project_title": "Auto Showroom",
-        "project_description": "Landing page for an electric car dealership, focused on a minimalistic proffesional look. Hooks and framer motion used.",
-        "image_link": "/projects/car.png",
-        "github_link": "https://github.com/Xuradel/proxieves",
-        "application_link": "https://xuradel.github.io/proxieves/",
-        "tech": ["react", "bootstrap", "figma"]
+        "project_title": "Optical Shop",
+        "project_description": "Landing page for a client's optical shop, with dynamic routing.",
+        "image_link": "/projects/optical.png",
+        "github_link": "",
+        "application_link": "https://clinica-studio-visual.vercel.app/",
+        "tech": ["react", "js", "css"]
       },
       {
         "project_title": "Digital Money Transfer Platform",
@@ -38,7 +46,15 @@
         "image_link": "/projects/cash.png",
         "github_link": "https://github.com/Xuradel/proxitransfer",
         "application_link": "https://xuradel.github.io/proxitransfer/",
-        "tech": ["react", "bootstrap", "sketch", "api"]
+        "tech": ["react", "bootstrap", "sketch", "api","js","css"]
+      },
+      {
+        "project_title": "Auto Showroom",
+        "project_description": "Landing page for an electric car dealership, focused on a minimalistic proffesional look. Hooks and framer motion used.",
+        "image_link": "/projects/car.png",
+        "github_link": "https://github.com/Xuradel/proxieves",
+        "application_link": "https://xuradel.github.io/proxieves/",
+        "tech": ["react", "figma","js","css"]
       }
     ]
   }
