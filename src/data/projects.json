@@ -9,6 +9,14 @@
         "tech": ["nextjs", "tailwind", "prisma", "mongo", "typescript"]
       },
       {
+        "project_title": "Task management SaaS",
+        "project_description": "Trello clone, a project management tool.",
+        "image_link": "/projects/taskify.png",
+        "github_link": "",
+        "application_link": "https://taskify-brown.vercel.app/",
+        "tech": ["nextjs", "tailwind", "prisma", "sql", "typescript"]
+      },
+      {
         "project_title": "Esports Data Analytics",
         "project_description": "League Pro Data is your go-to destination for comprehensive analysis of competitive and solo queue games in the world of League of Legends.",
         "image_link": "/projects/league.png",
